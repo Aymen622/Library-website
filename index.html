@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Library</title>
+        <meta name="title" content="Library Books">
+        <meta name="description" content="This is is Library Managment system developed by Aymen Mohammed">
+
+        <link rel="stylesheet" href="style-home.css">
+
+        <style>
+            /* Some basic styling for the search bar and results */
+            #searchInput {
+                width: 100%;
+                padding: 8px;
+                font-size: 16px;
+                display: flex;
+            }
+            #searchResults {
+                margin-top: 20px;
+            }
+            </style>
+
+        <script src="script-home.js" defer></script>
+    </head>
+    <body>
+        
+
+        <header class="header active" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <h1 class="logo">Library</h1>
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#" class="navbar-link label-medium active">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="navbar-link label-medium active">about</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="navbar-link label-medium active">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-wrapper">
+                        <a href="index.php" class="btn-link label-medium">Login</a>
+                        <a href="logout.php" class="btn btn-fill label-medium">Logout</a>
+                    </div>
+
+                </nav>
+
+                <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                    <img class="menu" src="../image/menu.png" alt="">
+
+                    <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+                </button>
+
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <!--
+                    -#HERO
+                -->
+
+                    <section class="hero">
+                        <div class="container">
+
+                            <div class="hero-content">
+
+                                <h1 class="headline-large hero-title">Find Books</h1>
+
+                                <p class="body-large hero-text" style="font-size: 20px;">
+                                    this website designed for 
+                                    library and its main purpose is to provide students and other reading lover's to access books. Now a days going to Library might
+                                    be its could be difficult. this website can provide you any book to use as PDF.
+                                </p>
+
+
+                                <form action="./" method="get" class="search-bar">
+
+                                    <a href="more.html" class="btn btn-outline">
+                                        <span class="label-medium">search for books ?</span>
+                                    </a>
+
+                                </form>
+
+                            </div>
+
+                            <img src="../1.PNG" width="816" height="659" role="presentation" 
+                            class="hero-banner">
+                            
+                        </div>
+                    </section>
+
+
+                    <!--
+                        -PROPERTY
+                    -->
+
+
+                     <section class="section property" aria-labelledby="property-label">
+                                <div class="container">
+
+                                    <div class="title-wrapper">
+
+                                        <div>
+                                            <h2 class="section-title headline-small">Best books in our library</h2>
+
+                                            <p class="section-text body-large">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, asperiores deserunt quas voluptas ipsum quo porro quam inventore 
+                                                quod repudiandae repellendus fugit magnam, nihil accusamus eius libero. Vero, ratione quos.
+                                            </p>
+                                        </div>
+                                        <a href="more.html" class="btn btn-outline">
+                                            <span class="label-medium">More Books</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="property-list">
+
+                                        <div class="card">
+
+                                            <div class="card-banner">
+
+                                                <figure class="img-holder" style="--width: 290; --height: 195;">
+                                                    <img src="../image/8.jpg" width="585" height="390" alt="" class="img-cover">
+                                                </figure>
+
+                                                <span class="badge label-medium">New</span>
+
+                                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                </button>
+
+                                            </div>
+
+                                            <div class="card-content">
+
+                                                <span class="title-large">Physics</span>
+
+                                                <h3>
+                                                    <a href="#" class="title-small card-title">Grade 9</a>
+                                                    <a href="../books/Physics  Grade 9 StudentTextbook Final version .pdf" download class="download-button">Download</a>
+                                                </h3>
+
+                                                <p class="body-medium card-text">
+                                                    Acadamy book for grade 9
+                                                </p>
+                                                </div>
+
+                                            </div>
+                                        
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/math-3.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Math</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 9</a>
+                                                        <a href="../books/G9-Mathematics-STB-2023-web.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 9
+                                                    </p>
+                                                    </div>
+    
+                                            </div> 
+                                                
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/6.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Chemistry</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 11</a>
+                                                        <a href="#" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 11
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                        
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/18.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Biology</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 9</a>
+                                                        <a href="../books/G9-Biology.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 9
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                            
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/math-1.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Math</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 10</a>
+                                                        <a href="#" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 10
+                                                    </p>
+                                                    </div>
+    
+                                            </div> 
+                                        
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/8.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Physics</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 12</a>
+                                                        <a href="#" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 12
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                        
+                                         <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/15.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Snow White and the Seven Dwarfs</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title"></a>
+                                                        <a href="../books/story-Snow White and the Seven Dwarfs Author Jacob Grimm,Wilhelm Grimm.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                            
+                                        <div class="card">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/19.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">The Frog Prince</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title"></a>
+                                                        <a href="../books/story-The Frog Prince (Article) Author Jacob Ludwig Grimm,Wilhelm Carl Grimm.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>    
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                     </section>
+
+
+
+                     <!--
+                        -#FEATURE
+                     -->
+                     <h1 class="f">Features</h1>
+                     <h3>These are features make this website best for you</h3>
+
+                <section class="section feature" aria-labelledby="feature-label">
+                    <div class="container">
+                        <figure class="feature-banner">
+                            <img src="../image/12.jpg" width="1020" height="690" loading="lazy" alt="feature banner" class="img-cover">
+                        </figure>
+
+                        <div class="feature-content">
+                            <h2 class="headline-medium" id="feature-label">
+                                This Website have quality books for students
+                            </h2>
+
+                            <p class="body-large feature-text">
+                                Looking for Acadamy Books for students ?
+                                This Website have Books for students like Acadamy book and so many helpful books
+                            </p>
+
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 9 Books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 10 books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 11 books</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="section feature feature-2" aria-labelledby="feature-label-2">
+                    <div class="container">
+                        <figure class="feature-banner">
+                            <img src="../image/10.jpg" width="1020" height="690" loading="lazy" alt="feature banner" class="img-cover">
+                        </figure>
+
+                        <div class="feature-content">
+                            <h2 class="headline-medium" id="feature-label-2">
+                                The Best Website for reading Lovers
+                            </h2>
+
+                            <p class="body-large body-text">
+                                This Website is not only for Students, Everybody can use this Website both for education and Entertainment. 
+                            </p>
+
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <a class="body-medium">Fairy Books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium">To have fun</a>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </section>
+        <!--
+            #FOOTER
+        -->   
+
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <h1>Library</h1>
+                        </a>
+
+                        <p class="body-medium footer-text">
+                            Click on menu button to know more
+                        </p>
+                    </div>
+
+                    <nav class="footer-nav" aria-labelledby="nav-label-1">
+                        <p class="title-small footer-list-title" id="nav-label-1" style="font-size: 25px;">Quick link</p>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="index.html" class="body-medium footer-link">Home</a>
+                            </li>
+                            
+                            <li>
+                                <a href="about.html" class="body-medium footer-link">Contact</a>
+                            </li>
+                            
+                            <li>
+                                <a href="about.html" class="body-medium footer-link">About</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="footer-nav" aria-labelledby="nav-label-2">
+                        <p class="title-small footer-list-title" id="nav-label-1" style="font-size: 25px;">Quick link</p>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="#" class="body-medium footer-link" style="font-size: 20px;">books@bedelelibrary.com</a>
+                            </li>
+                            
+                            <li>
+
+                                <ul class="social-list">
+
+                                    <li>
+                                        <a href="" class="social-list">
+                                            <img src="../image/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social-list">
+                                            <img src="../image/instagram.jpg" alt="telegram">
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="developed body-medium">
+                        Developed by Aymen Mohammed.
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    
+</body>
+</html>

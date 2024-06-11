@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Library</title>
+        <meta name="title" content="Library Books">
+        <meta name="description" content="This is is Library Managment system developed by Aymen Mohammed">
+
+        <link rel="stylesheet" href="more.css">
+        <style>
+           
+.search-bar {
+  margin: 2px auto;
+  background: white;
+  height: 30px;
+  border-radius: 30px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+.search-bar .input {
+  width: 450px;
+}
+.search-bar .input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+.search-bar .btn .fas {
+  color: #aa00ff;
+}
+        </style>
+        <script src="more.js" defer></script>
+    </head>
+    <body>
+        
+
+        <header class="header active" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <h1 class="logo">Library</h1>
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#" class="navbar-link label-medium active">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link label-medium active">about</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link label-medium active">contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link label-medium active">Support</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-wrapper">
+                        <a href="index.php" class="btn-link label-medium">Login</a>
+                        <a href="logout.php" class="btn btn-fill label-medium">Logout</a>
+                    </div>
+
+                </nav>
+
+                <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                    <img class="menu" src="../image/menu.png" alt="">
+
+                    <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+                </button>
+
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <!--
+                    -#HERO
+                -->
+
+                    <section class="hero">
+                        <div class="container">
+
+                            <div class="hero-content">
+
+                                <h1 class="headline-large hero-title">Search for books</h1>
+
+                                <p class="body-large hero-text" style="font-size: 20px;">
+                                    this website designed for 
+                                    library and its main purpose is to provide students and other reading lover's to access books. Now a days going to Library might
+                                    be its could be difficult. this website can provide you any book to use as PDF.
+                                </p>
+
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search for books...">
+                                    <a href="#" class="btn">
+                                      <i class="fas fa-search"></i>
+                                    </a>
+                                  </div>
+
+                                  <section>
+                                    <label for="book-type">Choose a book type:</label>
+                                    <select id="book-type">
+                                      <option value="all">All</option>
+                                      <option value="Acadamy">Acadamy</option>
+                                      <option value="story">Story</option>
+                                      <option value="kids">Kids</option>
+                                      <option value="Science">Science</option>
+                                      <option value="Exams">Exams</option>
+                                    </select>
+                                  </section>
+
+                                
+                            </div>
+                            
+                        </div>
+                    </section>
+
+
+                    <!--
+                        -PROPERTY
+                    -->
+
+                     <section class="section property" aria-labelledby="property-label">
+                                <div class="container">
+                                        
+                                    <div class="title-wrapper">
+                                     
+                                    </div>
+
+                                    <div class="property-list">
+
+                                        <div class="book-card" data-title="Physics" data-author="grade 9" data-type="Acadamy">
+
+                                            <div class="card-banner">
+
+                                                <figure class="img-holder" style="--width: 290; --height: 195;">
+                                                    <img src="../image/8.jpg" width="585" height="390" alt="" class="img-cover">
+                                                </figure>
+
+                                                <span class="badge label-medium">New</span>
+
+                                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                </button>
+
+                                            </div>
+
+                                            <div class="card-content">
+
+                                                <span class="title-large">Physics</span>
+
+                                                <h3>
+                                                    <a href="#" class="title-small card-title">Grade 9</a>
+                                                    <a href="../books/Physics  Grade 9 StudentTextbook Final version .pdf" download class="download-button">Download</a>
+                                                </h3>
+
+                                                <p class="body-medium card-text">
+                                                    Acadamy book for grade 9
+                                                </p>
+                                                </div>
+
+                                            </div>
+                                        
+                                        <div class="book-card" data-title="Math" data-author="grade 9" data-type="Acadamy">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/math-3.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Math</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 9</a>
+                                                        <a href="../books/G9-Mathematics-STB-2023-web.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 9
+                                                    </p>
+                                                    </div>
+    
+                                            </div> 
+                                                
+                                        <div class="book-card" data-title="Goldilocks and the Three Bears" data-author="story" data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Goldilocks and the Three Bears</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 11</a>
+                                                        <a href="../books/story-Goldilocks and the Three Bears (Article) Author James Marshall.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                        
+                                        <div class="book-card" data-title="Biology" data-author="grade 9" data-type="Acadamy">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/18.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Biology</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 9</a>
+                                                        <a href="../books/G9-Biology.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 9
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                            
+                                        <div class="book-card" data-title="Hansel and Gretel" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Hansel and Gretel</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Hansel and Gretel Author Madeleine Francis.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        story
+                                                    </p>
+                                                    </div>
+    
+                                            </div> 
+                                        
+                                        <div class="book-card" data-title="Physics" data-author="grade 12"  data-type="Acadamy">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/8.jpg" width="585" height="390" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Physics</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Grade 12</a>
+                                                        <a href="#" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Acadamy book for grade 12
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                        
+                                        <div class="book-card" data-title="Cinderalla" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Cinderalla</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Cinderella Author Charles Perrault.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="bacteria" data-author="Science"  data-type="Science">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/bacteria.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">bacteria</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Biology-bacteria</a>
+                                                        <a href="../books/biology-bacteria.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        biology book
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                        
+                                            <div class="book-card" data-title="Inorganic chemistry" data-author="Science"  data-type="Science">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/chemistry-2.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Inorganic chemistry</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title"></a>
+                                                        <a href="../books/chemistry-Inorganic chemistry author Taro Saito.PDF" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        chemistry
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="HighSchool questions Math" data-author="Exams"  data-type="Exams">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/questions.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">HighSchool questions Math</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Questions</a>
+                                                        <a href="../books/math-HighSchool_questions_Math.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        questions for HighSchool students
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Physics" data-author="Science"  data-type="Science">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/physics-2.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Physics</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">Reference book</a>
+                                                        <a href="../books/physics-A Textbook for High School Students Studying Physics author FHSST Authors.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        A Reference books for High School Students
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Jack and the Beanstalk" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/13.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Jack and the Beanstalk</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Jack and the Beanstalk Author Etherley Lane Primary School.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Cinderalla" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Cinderalla</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Cinderella Author Charles Perrault.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Food Microbiology" data-author="biology"  data-type="Science">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/biology.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Food Microbiology</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">biology</a>
+                                                        <a href="../books/biology-Introduction to Food Microbiology Author eGyanKosh.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Food Microbiology
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Cinderalla" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Cinderalla</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Cinderella Author Charles Perrault.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Cinderalla" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Cinderalla</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Cinderella Author Charles Perrault.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+
+                                            <div class="book-card" data-title="Cinderalla" data-author="story"  data-type="story">
+
+                                                <div class="card-banner">
+    
+                                                    <figure class="img-holder" style="--width: 585; --height: 390;">
+                                                        <img src="../image/story.jpg" width="500" height="300" alt="" class="img-cover">
+                                                    </figure>
+    
+                                                    <span class="badge label-medium">New</span>
+    
+                                                    <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                                        <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="card-content">
+    
+                                                    <span class="title-large">Cinderalla</span>
+    
+                                                    <h3>
+                                                        <a href="#" class="title-small card-title">story</a>
+                                                        <a href="../books/story-Cinderella Author Charles Perrault.pdf" download class="download-button">Download</a>
+                                                    </h3>
+    
+                                                    <p class="body-medium card-text">
+                                                        Story
+                                                    </p>
+                                                    </div>
+    
+                                            </div>
+                                            
+                                        </div>
+                                        <script>
+                                            function searchBooks() {
+                                                const input = document.getElementById('searchInput');
+                                                const filter = input.value.toLowerCase();
+                                                const bookCards = document.getElementsByClassName('book-card');
+                                                
+                                                for (let i = 0; i < bookCards.length; i++) {
+                                                    const title = bookCards[i].getAttribute('data-title').toLowerCase();
+                                                    const author = bookCards[i].getAttribute('data-author').toLowerCase();
+                                                    if (title.includes(filter) || author.includes(filter)) {
+                                                        bookCards[i].style.display = "";
+                                                    } else {
+                                                        bookCards[i].style.display = "none";
+                                                    }
+                                                }
+                                            }
+                                        </script>
+
+                                    </div>
+
+                                </div>
+                     </section>
+
+
+
+                     <!--
+                        -#FEATURE
+                     -->
+                     <h1 class="f">Features</h1>
+                     <h3>These are features make this website best for you</h3>
+
+                <section class="section feature" aria-labelledby="feature-label">
+                    <div class="container">
+                        <figure class="feature-banner">
+                            <img src="../image/12.jpg" width="1020" height="690" loading="lazy" alt="feature banner" class="img-cover">
+                        </figure>
+
+                        <div class="feature-content">
+                            <h2 class="headline-medium" id="feature-label">
+                                This Website have quality books for students
+                            </h2>
+
+                            <p class="body-large feature-text">
+                                Looking for Acadamy Books for students ?
+                                This Website have Books for students like Acadamy book and so many helpful books
+                            </p>
+
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 9 Books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 10 books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium" href="#">Grade 11 books</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="section feature feature-2" aria-labelledby="feature-label-2">
+                    <div class="container">
+                        <figure class="feature-banner">
+                            <img src="../image/10.jpg" width="1020" height="690" loading="lazy" alt="feature banner" class="img-cover">
+                        </figure>
+
+                        <div class="feature-content">
+                            <h2 class="headline-medium" id="feature-label-2">
+                                The Best Website for reading Lovers
+                            </h2>
+
+                            <p class="body-large body-text">
+                                This Website is not only for Students, Everybody can use this Website both for education and Entertainment. 
+                            </p>
+
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <a class="body-medium">Fairy Books</a>
+                                </li>
+                                <li class="feature-item">
+                                    <a class="body-medium">To have fun</a>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </section>
+        <!--
+            #FOOTER
+        -->   
+
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <img src="../image/7.jpg" width="190" height="28" alt="Library">
+                        </a>
+
+                        <p class="body-medium footer-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam 
+                            repellendus nulla necessitatibus maxime dolor suscipit, quas perferendis ab dicta, 
+                            cupiditate nisi excepturi voluptate consequatur voluptatem!
+                        </p>
+                    </div>
+
+                    <nav class="footer-nav" aria-labelledby="nav-label-1">
+                        <p class="title-small footer-list-title" id="nav-label-1" style="font-size: 25px;">Quick link</p>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="#" class="body-medium footer-link">Home</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="body-medium footer-link">Contact</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="body-medium footer-link">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="body-medium footer-link">Support</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="footer-nav" aria-labelledby="nav-label-2">
+                        <p class="title-small footer-list-title" id="nav-label-1" style="font-size: 25px;">Quick link</p>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="#" class="body-medium footer-link" style="font-size: 20px;">books@bedelelibrary.com</a>
+                            </li>
+                            
+                            <li>
+
+                                <ul class="social-list">
+
+                                    <li>
+                                        <a href="" class="social-list">
+                                            <img src="../image/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social-list">
+                                            <img src="../image/instagram.jpg" alt="telegram">
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="developed body-medium">
+                        Developed by Aymen Mohammed.
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    
+</body>
+</html>
